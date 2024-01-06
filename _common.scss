@@ -1,0 +1,40 @@
+:root {
+  --font-2: 'Work Sans', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-bold: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@font-face {
+  font-family: 'Visby Round CF Medium';
+  src: url('./VisbyRoundCF-Medium.woff');
+}
+
+.full-width {
+  float: left;
+  width: 100%;
+}
+
+.heading-2,
+.heading-3 {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 32px;
+}
+
+.heading-3 {
+  font-size: 26px;
+}
+
+.min-height {
+  min-height: calc(100vh - 100px);
+}
+
+.font-2 {
+  font-family: var(--font-2);
+}

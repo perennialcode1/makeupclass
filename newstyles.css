@@ -37,11 +37,6 @@
     --fs-62: 62px;
 }
 
-body {
-    font-family: var(--font-family-1);
-    color: var(--text-white);
-    background-color: var(--bg-black);
-}
 
 .fw-300 {
     font-weight: 300;
@@ -189,34 +184,48 @@ body {
     color: #ffffff !important;
 }
 
-    .btn-primary:hover {
-        background-color: var(--bg-bobyleft) !important;
-        border-color: var(--bg-bobyleft) !important;
-    }
+.btn-primary:hover {
+    background-color: var(--bg-bobyleft) !important;
+    border-color: var(--bg-bobyleft) !important;
+}
 
 .btn-outline-primary {
     border-color: var(--bg-salem) !important;
     color: #ffffff;
 }
 
-    .btn-outline-primary:hover {
-        background-color: var(--bg-salem) !important;
-        border-color: var(--bg-salem) !important;
-    }
+.btn-outline-primary:hover {
+    background-color: var(--bg-salem) !important;
+    border-color: var(--bg-salem) !important;
+}
 
 .btn {
     border-radius: 4px;
 }
 
+@import url('https://fonts.cdnfonts.com/css/caros');
+
 @font-face {
     font-family: 'Visby Round CF Medium';
-    src: url("./VisbyRoundCF-Medium.otf");
+    src: url("./VisbyRoundCF-Medium.woff");
 }
 
 @font-face {
     font-family: 'Quant Font';
     src: url("./Quant\ Text\ W01\ Regular.ttf");
 }
+
+@font-face {
+    font-family: 'VAG Rounded font';
+    src: url("./VAG Rounded Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Wensley font';
+    src: url("./WensleyDemo.ttf");
+}
+
+
 
 .text-Visby {
     font-family: 'Visby Round CF Medium';
@@ -227,8 +236,23 @@ body {
     font-family: 'Quant Font';
 }
 
+.text-vag {
+    font-family: 'VAG Rounded font';
 
-.mc-navbar > li > a {
+}
+
+.text-Wensley {
+    font-family: 'Wensley font';
+}
+
+.text-caros{
+    font-family: 'Caros', sans-serif;
+}
+
+
+
+
+.mc-navbar>li>a {
     font-size: var(--fs-16);
     font-weight: 400;
     color: var(--text-white);
@@ -238,11 +262,11 @@ body {
     text-transform: uppercase;
 }
 
-    .mc-navbar > li > a:hover {
-        background-color: var(--bg-salem);
-        border-radius: 5px;
-        color: #ffffff;
-    }
+.mc-navbar>li>a:hover {
+    background-color: var(--bg-salem);
+    border-radius: 5px;
+    color: #ffffff;
+}
 
 header {
     position: sticky;
@@ -250,7 +274,7 @@ header {
     z-index: 5;
 }
 
-.logo-box > a > img {
+.logo-box>a>img {
     width: 8em;
     position: relative;
     left: 4%;
@@ -286,9 +310,9 @@ header {
     left: 5em;
 }
 
-    .hero-details-box > h1 {
-        text-shadow: 0 0 3px #8c062e;
-    }
+.hero-details-box>h1 {
+    text-shadow: 0 0 3px #8c062e;
+}
 
 .hero-details-right-box {
     position: absolute;
@@ -311,9 +335,9 @@ header {
     padding-left: 30px;
 }
 
-    .mc-check-points > li {
-        padding: 10px;
-    }
+.mc-check-points>li {
+    padding: 10px;
+}
 
 .video-box {
     background-color: var(--bg-black);
@@ -332,11 +356,11 @@ header {
     transition: 0.5s ease-out;
 }
 
-    .social-box:hover {
-        background-color: #25272c;
-        transition: 0.5s ease-in;
-        cursor: pointer;
-    }
+.social-box:hover {
+    background-color: #25272c;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
 
 .accordion-item {
     border: 0px;
@@ -351,7 +375,7 @@ header {
     color: #ffffff;
 }
 
-.mc-accordion-header > .accordion-button {
+.mc-accordion-header>.accordion-button {
     background-color: #272727;
     color: white;
 }
@@ -375,23 +399,23 @@ footer {
     padding-left: 0;
 }
 
-    .mc-explore > li {
-        padding: 5px 0;
-    }
+.mc-explore>li {
+    padding: 5px 0;
+}
 
-        .mc-explore > li > a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 13px;
-        }
+.mc-explore>li>a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+}
 
-.mc-carousel-item > img {
+.mc-carousel-item>img {
     width: 240px;
     height: 230px;
     border-radius: 50%;
 }
 
-.mc-carousel-item > .carousel-caption {
+.mc-carousel-item>.carousel-caption {
     border-radius: 5px;
     background-color: #3a3b3f;
     margin-left: 7em;
@@ -400,16 +424,16 @@ footer {
     padding: 1.5em;
 }
 
-    .mc-carousel-item > .carousel-caption > h5 {
-        font-weight: 900;
-    }
+.mc-carousel-item>.carousel-caption>h5 {
+    font-weight: 900;
+}
 
-    .mc-carousel-item > .carousel-caption > p {
-        font-weight: 400;
-        font-size: 14px;
-    }
+.mc-carousel-item>.carousel-caption>p {
+    font-weight: 400;
+    font-size: 14px;
+}
 
-.mc-carousel > .carousel-inner {
+.mc-carousel>.carousel-inner {
     padding-left: 9em;
 }
 
@@ -419,7 +443,7 @@ footer {
     border-radius: 50% !important;
 }
 
-.mc-carousel > .carousel-indicators {
+.mc-carousel>.carousel-indicators {
     bottom: -40px;
     right: -110px;
 }
@@ -427,7 +451,7 @@ footer {
 
 
 @media screen and (min-width: 375px) and (max-width:1023px) {
-    
+
     .btn {
         font-size: var(--fs-16);
     }
@@ -456,7 +480,7 @@ footer {
         left: 0;
     }
 
-    .offcanvas-header > button {
+    .offcanvas-header>button {
         background: none;
     }
 
@@ -469,7 +493,7 @@ footer {
         margin-right: 0;
     }
 
-    .mc-carousel > .carousel-indicators {
+    .mc-carousel>.carousel-indicators {
         display: none;
     }
 
@@ -489,7 +513,7 @@ footer {
         box-shadow: 0px 5px 16px -1px #000;
     }
 
-    .logo-box > a > img {
+    .logo-box>a>img {
         box-shadow: none;
         width: 7em;
     }
@@ -498,19 +522,19 @@ footer {
         text-align: center;
     }
 
-    .mc-carousel > .carousel-inner {
+    .mc-carousel>.carousel-inner {
         padding-left: 0;
         height: 400px;
         height: fit-content;
     }
 
-    .mc-carousel-item > img {
+    .mc-carousel-item>img {
         margin: auto;
         width: 150px;
         height: 150px;
     }
 
-    .mc-carousel-item > .carousel-caption {
+    .mc-carousel-item>.carousel-caption {
         bottom: 0;
         width: 100%;
         margin-left: 0;
@@ -530,15 +554,18 @@ footer {
         float: left;
     }
 
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 25px;
         position: relative;
     }
+
     .navbarlogotxt {
         margin-left: 6px;
         font-size: 15px;
     }
 }
+
 @media screen and (min-width: 375px) {
     .navbarlogotxt {
         margin-left: 90px;
@@ -548,7 +575,7 @@ footer {
         font-size: 40px;
     }
 
-    .logo-box > a > img {
+    .logo-box>a>img {
         width: 8em;
         position: relative;
         left: 11%;
@@ -559,7 +586,7 @@ footer {
 
 @media screen and (min-width: 410px) {
 
-    .logo-box > a > img {
+    .logo-box>a>img {
         width: 8em;
         position: relative;
         left: 9%;
@@ -602,7 +629,52 @@ footer {
     .hero-details-right-box {
         top: 10em;
     }
+
     .navbarlogotxt {
         margin-left: 110px;
     }
+}
+
+.video-intro-block {
+    background-image: url("https://makeupqaazurewebsites.b-cdn.net/Lear%20the%20Art%20Makeup_Web%20site%20Image%20copy.jpg");
+}
+
+.each-tutorial-reason .each-tutorial-reason-icon {
+    background-image: url(https://makeupqaazurewebsites.b-cdn.net/Website%20Icons/makeup-classes-sprite.png);
+}
+
+.each-tutorial-reason .each-tutorial-reason-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.text-Visby {
+    font-family: 'Visby Round CF Medium';
+}
+
+.brandfont {
+    font-family: 'Visby Round CF Medium';
+}
+
+.danger {
+    color: #fff !important;
+    background-color: orangered !important;
+}
+
+.success {
+    color: #fff !important;
+    background-color: green !important;
+}
+
+.episode-video-play {
+    cursor: pointer;
+}
+
+.login-block-mod {
+    text-align: center;
+}
+
+.iti__flag-box,
+.iti__country-name {
+    color: black;
 }
